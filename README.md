@@ -4,12 +4,12 @@ bupper
 A Nodejs Buffer helper.
 
 ## Installation
-Use npm
+Use npm:
 ```shell
 npm install git://github.com/shallker-wang/bupper.git
 ```
 
-or add to your package dependencies
+Or add to your package dependencies:
 ```json
 {
   "dependencies": {
@@ -19,7 +19,7 @@ or add to your package dependencies
 ```
 
 ## Quick Start
-Concat Buffer chunks with `.add(chunk)` and output them together using `.combine()`
+Concat buffer chunks with `.add(chunk)` and output them together using `.combine()`
 ```javascript
 var Bupper = require('bupper');
 var http = require('http');
@@ -31,6 +31,17 @@ http.createServer(function(req, res) {
     console.log( Bupper.combine().toString() )
   })
 }).listen(80);
+```
+
+## APIs
+Concat chunks:
+```javascript
+Bupper.add(chunk)
+```
+
+Output chunks:
+```javascript
+Bupper.combine()
 ```
 
 ## Todo
