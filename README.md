@@ -6,14 +6,14 @@ A Nodejs Buffer helper.
 ## Installation
 Use npm:
 ```shell
-npm install git://github.com/shallker-wang/bupper.git
+npm install bupper
 ```
 
 Or add to your package dependencies:
 ```json
 {
   "dependencies": {
-    "bupper": "git://github.com/shallker-wang/bupper.git"
+    "bupper": "*"
   }
 }
 ```
